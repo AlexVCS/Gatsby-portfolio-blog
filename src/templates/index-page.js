@@ -1,7 +1,6 @@
 import React from "react"
-import { graphql, Link } from "gatsby"
+import { graphql } from "gatsby"
 import Img from "gatsby-image"
-import { RiArrowRightSLine } from "react-icons/ri"
 
 import Layout from "../components/layout"
 import BlogListHome from "../components/blog-list-home"
@@ -13,8 +12,6 @@ export const pageQuery = graphql`
       id
       html
       frontmatter {
-        title
-        tagline
         featuredImage {
           childImageSharp {
             fluid(maxWidth: 480, maxHeight: 380, quality: 80, srcSetBreakpoints: [960, 1440]) {
@@ -24,7 +21,8 @@ export const pageQuery = graphql`
               src
             }
           }
-        }
+        }title
+        tagline
         
       }
     }
