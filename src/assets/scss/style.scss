@@ -12,7 +12,7 @@
 }
 .site-header {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
   position: relative;
   background: var(--header-bg);
@@ -29,14 +29,12 @@
     margin-left: 20px;
   }
   a {
-    color: rgba(255,255,255,0.6);
+		color: #212121;
+		background-color: var(--primary-color);
     text-decoration: none;
     &:hover {
       color: rgba(255,255,255,0.8);
     }
-  }
-  a[aria-current="page"] {
-    color: rgba(255,255,255,1)
   }
   .menu-trigger {
     display: none;
@@ -88,7 +86,7 @@
       padding: 20px;
     }
     a:hover {
-      background-color: #29121D;
+      background-color: #212121;
     }
   }
 }
@@ -100,10 +98,10 @@
 .site-logo {
   font-weight: bold;
   a {
-    color: #fff;
+    color: #212121;
 		text-decoration: none;
 		&:hover {
-			color: #fff;
+			color: #212121;
 		}
   }
   @media (max-width: $breakpoint-lg) {

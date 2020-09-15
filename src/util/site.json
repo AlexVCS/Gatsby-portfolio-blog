@@ -1,11 +1,11 @@
 {
   "meta": {
-    "title": "Foundation",
+    "title": "Alex Curtis-Slep",
     "titleTemplate": "%s",
-    "description": "A starter to launch your blazing fast personal website and a blog, Built with Gatsby and Netlify CMS. Made with ❤ by Stackrole",
-    "siteUrl": "https://foundation.stackrole.com",
+    "description": "A portfolio site and blog to showcase my coding projects and share what I'm learning with the world.",
+    "siteUrl": "https://alexcurtisslep.netlify.app",
     "image": "/assets/stackrole.png",
-    "twitterUsername": "@stackrole"
+    "twitterUsername": "@alexcurtisslep"
   },
   "ga": "UA-XXXXXXXXX-X"
 }
