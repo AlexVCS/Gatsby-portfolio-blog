@@ -37,12 +37,7 @@ const HomePage = ({ data }) => {
 		<Layout>
       <SEO/>
       <div className="home-banner grids col-1 sm-2">
-        <div>
-          <h1 class="title">{frontmatter.title}</h1>
-          <p class="tagline">{frontmatter.tagline}</p>
-          <div className="description" dangerouslySetInnerHTML={{__html: html}}/>
-        </div>
-        <div>
+      <div>
           {Image ? (
             <Img 
               fluid={Image} 
@@ -51,8 +46,12 @@ const HomePage = ({ data }) => {
             />
           ) : ""}
         </div>
+        <div>
+          <h1 class="title">{frontmatter.title}</h1>
+          <p class="tagline">{frontmatter.tagline}</p>
+          <div className="description" dangerouslySetInnerHTML={{__html: html}}/>
+        </div>
       </div>
-      <BlogListHome/>
 		</Layout>
 	)
 }
