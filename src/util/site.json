@@ -4,7 +4,7 @@
     "titleTemplate": "%s",
     "description": "A portfolio site and blog to showcase my coding projects and share what I'm learning with the world.",
     "siteUrl": "https://alexcurtisslep.netlify.app",
-    "image": "/assets/stackrole.png",
+    "image": "/assets/favicon.ico",
     "twitterUsername": "@alexcurtisslep"
   },
   "ga": "UA-XXXXXXXXX-X"
