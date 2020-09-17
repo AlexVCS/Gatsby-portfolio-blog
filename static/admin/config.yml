@@ -117,7 +117,7 @@ collections:
               - widget: image
                 name: image
                 label: image
-                default: '/favicon.ico'
+                default: '/favicon.png'
               - widget: string
                 name: twitterUsername
                 label: Twitter
