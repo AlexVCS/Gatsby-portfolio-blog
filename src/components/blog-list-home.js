@@ -20,7 +20,7 @@ export default function BlogListHome() {
       query={graphql`
         query {
           allMarkdownRemark(
-            sort: { order: DESC, fields: [frontmatter___date] }
+            sort: { order: DESC, fields: [frontmatter___slug] }
             filter: { frontmatter: { template: { eq: "blog-post" } } }
             limit: 6
           ) {
