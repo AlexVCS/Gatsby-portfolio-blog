@@ -2,11 +2,6 @@
 @import "defaults";
 @import "lib/css-grid-utility";
 
-// .primary-container {
-// 	display: grid;
-// 	grid-template-rows: 60px auto 60px;
-// 	min-height: 100vh;
-// }
 .primary-container main {
 	min-height: calc(100vh - 60px - 81px);
 }
@@ -17,6 +12,15 @@
   position: relative;
   background: var(--header-bg);
   padding: 30px 20px;
+}
+.git-icon:hover {
+	fill: #000;
+}
+.linked-icon:hover {
+	fill: #2867B2;
+}
+.email-icon:hover {
+	fill: #00994C;
 }
 .site-navigation {
   ul {
@@ -44,13 +48,15 @@
     color: white;
     padding: 0;
     cursor: pointer;
-  }
+	}
+	
+
   @media (max-width: $breakpoint-lg) {
     .menu-trigger,
     .icon-menu-line {
       display: flex;
     }
-
+		
     .icon-menu-close {
       display: none;
     }
@@ -127,6 +133,10 @@
 		font-size: 20px;
 		line-height: 1.4;
 		margin-bottom: 30px;
+	}
+	.icons-container {
+		display: grid;
+		grid-template-columns: repeat(3, .20fr);
 	}
 	.featured-image {
 		border-radius: 12px;
@@ -223,6 +233,11 @@ article figure {
 			margin-top: 5px;
 	}
 }
+// Index Page Icons
+.icons-container {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+}
 article blockquote {
 	margin-left: 0;
 	padding: 5px 5px 5px 20px;
@@ -292,6 +307,7 @@ article img {
 		}
 	}
 }
+
 
 // Page
 .page,
