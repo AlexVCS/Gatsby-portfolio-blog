@@ -24,9 +24,6 @@ const Content = ({ data }) => {
       title={frontmatter.title}
       />
       <div className="description" dangerouslySetInnerHTML={{__html: html}}/>
-      <div>
-        <p>React is cool, more portfolio jazz to come</p>
-      </div>
     </Layout>
   )
 }

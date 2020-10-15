@@ -48,6 +48,7 @@ export default function BlogListHome() {
       }
 
       render={ data => {
+          console.log("DATA:", data);
           const posts = data.allMarkdownRemark.edges
             .filter(edge => !!edge.node.frontmatter.date)
             .map(edge =>
